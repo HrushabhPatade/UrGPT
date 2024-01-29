@@ -1,0 +1,38 @@
+.web{
+    display: flex;
+}
+
+.linkUpload {
+    /* background-color: red; */
+    padding: 5px;
+    width: 16.5vw;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 10px;
+    margin-top: 20px;
+    color: white;
+    font-size: large;
+  }
+  
+  .linkSection {
+    display: flex;
+    margin-top: 10px;
+    /* justify-content: space-around; */
+    border: 1px solid white;
+    border-radius: 3px;
+    padding-left: 2px;
+  }
+  
+  .first {
+    padding: 5px;
+    font-weight: 700;
+    border-right: 1px solid white;
+  }
+  
+  .second input {
+    height: 37px;
+    width: 12.7vw;
+    padding-left: 5px;
+    background-color: transparent;
+    color: white;
+  }

@@ -1,0 +1,348 @@
+.chat{
+    display: flex;
+}
+
+/* Sidebar */
+
+.sidebar {
+    background-color: rgb(39, 38, 38);
+    width: 18vw;
+    height: 100vh;
+    padding: 2px;
+    /* justify-content: center; */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: larger;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+  }
+  
+  .logo .h2 {
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  .newChat {
+    color: white;
+    width: 16vw;
+    height: 40px;
+    border-radius: 5px;
+  
+    margin: 10px;
+    padding: auto;
+    /* text-align: center; */
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    /* background-color: red; */
+  }
+  
+  .newChat p {
+    align-items: center;
+    font-size: x-large;
+  }
+  
+  .newChat:hover {
+    background-color: green;
+  }
+  
+  .chatHistory {
+    margin: 10px;
+    width: 17vw;
+    height: 54vh;
+    /* background-color: red; */
+  }
+  
+  .chatHistory p {
+    color: white;
+  }
+  
+  .list {
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    height: 50vh;
+    /* background-color: red; */
+  }
+  
+  .listItem {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    margin-right: 2px;
+    padding: 2px;
+    font-size: large;
+    margin: 5px;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 3px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    /* align-items: center; */
+    /* text-align: center; */
+    margin-bottom: 3px;
+    position: relative;
+  }
+  
+  .listItem:hover {
+    background-color: grey;
+  }
+  
+  .listItem .delete {
+    padding: 3px;
+    display: none;
+    /* align-items: right; */
+  }
+  
+  /* .ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  } */
+  
+  .listItem:hover .delete {
+    display: block;
+    animation: zoom-in-zoom-out 0.1s ease;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0, 0);
+    }
+    50% {
+      transform: scale(0.5, 0.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  .fileUpload {
+    width: 16.5vw;
+    /* background-color: red; */
+    padding: 5px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 20.5vh;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px dashed green;
+    margin-top: 2px;
+  }
+
+  .serverUpload{
+
+  }
+  
+  .fileUpload:hover{
+    background-color: green;
+  }
+  
+  /* .uploadButton{
+    width: 100px;
+    background-color: green;
+    border-radius: 5px;
+  } */
+  
+  .uploadpdf{
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 100px;
+    /* height: 75px; */
+    /* background-color: red; */
+  }
+  
+  .uploadpdf:hover{
+    background-color: green;
+  }
+  
+  .pdfName {
+    background-color: grey;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    padding-left: 2px;
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 0;
+    /* background-color: red; */
+    padding-top: 2px;
+  
+    top: -10px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  /* {WebQNA} */
+  
+
+  
+  /* {WebQNA} */
+  
+  /* /scrollbar/ */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 50px;
+  }
+  ::-webkit-scrollbar-track {
+    backdrop-filter: blur(40px) saturate(280%);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(212, 212, 235);
+  }
+  
+
+/* Sidebar */
+
+/* Main */
+
+.main {
+    background-color: black;
+    color: white;
+    padding: 5px;
+  
+    width: 82vw;
+    height: 100vh;
+  }
+  
+  .navbar {
+    /* background-color: red; */
+    height: 7vh;
+    margin-top: 2vh;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+  }
+  
+  .toggleButton {
+    width: 100px;
+    margin: 0 20px 0 20px;
+    margin-top: 2px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid white;
+    color: black;
+    font-size: medium;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .toggleButton:hover {
+    background-color: green;
+  }
+  
+  .toggleButton:focus {
+    background-color: gray;
+  
+    box-shadow: 0 0 30px 10px green;
+  }
+  
+  .conversions {
+    /* background-color: white; */
+    overflow-y: scroll;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 81vh;
+    /* text-align: end; */
+  }
+  
+  .questionBar {
+    /* background-color: red; */
+    height: 9.5vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+  
+  .qform {
+    /* background-color: red; */
+    width: 70vw;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    /* border-radius: 5px; */
+    /* padding-left: 10px; */
+  }
+  
+  .query {
+    width: 95%;
+    height: 6vh;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .send {
+    width: 5%;
+    height: 6vh;
+    border-radius: 5px;
+  }
+  
+  .send:hover {
+    background-color: green;
+  }
+  
+  /* .query{ */
+  /* height: 50px;
+      width: 68vw; */
+  /* margin: 8px; */
+  /* border-radius: 5px; */
+  /* padding-left: 10px;
+      font-size: large;
+      font-weight: 800;
+      color: white;
+      background-color: transparent; */
+  /* border: 2px solid white; */
+  /* } */
+  
+  /* .send{
+      height: 50px;
+      width: 2.5vw;
+      font-weight: bolder;
+      
+      border-radius: 5px;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+  }
+  
+  .send:hover{
+      background-color: green;
+  } */
+  
+
+/* Main */

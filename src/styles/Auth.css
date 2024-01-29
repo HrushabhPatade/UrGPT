@@ -1,0 +1,80 @@
+.auth {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  
+  }
+  
+  .authform {
+    background-color: rgb(39, 38, 38);
+    width: 30vw;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+  }
+  
+  .username {
+      width: 15vw;
+      height: 5vh;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      padding: 3px;
+      border: 2px solid white;
+      background-color: transparent;
+      color: white;
+      font-size: large;
+      font-weight: 700;
+  }
+  
+  .email{
+  
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 3px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    font-weight: 700;
+  
+  }
+  
+  .password{
+      width: 15vw;
+      height: 5vh;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      padding: 3px;
+      border: 2px solid white;
+      background-color: transparent;
+      color: white;
+      font-size: large;
+      font-weight: 700;
+  }
+  
+  .submit{
+      width: 5vw;
+      height: 4vh;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 2px solid white;
+      background-color: transparent;
+      color: white;
+  }
+  
+  .submit:hover{
+      background-color: green;
+  }
+  
+  
+  
